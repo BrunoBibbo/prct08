@@ -19,3 +19,4 @@ desc "Ejecutar las espectativas de la clase Matriz con documentacion html."
 task :html do
   sh "rspec -I. spec/Matriz_spec.rb --format html"
 end
+
