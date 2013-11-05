@@ -9,8 +9,10 @@ describe Matriz do
 
 	describe "Comprobacion de matrices" do
 		it "Comprobando matriz identidad" do
-		@m2.to_s.should eq('[[1,0,0],[0,1,0],[0,0,1]]')
+		@m2.to_s
+		@m2.to_s.should eq("[[1,0,0][0,1,0][0,0,1]]")
 		end
 	end
 
 end
+
