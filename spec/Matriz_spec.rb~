@@ -15,6 +15,17 @@ describe Matriz do
 		end
 	end
 
+	describe "Comprobación acceso al contenido de la matriz" do
+
+                it "Debe poder acceder con []" do
+                        @m1.should respond_to(:[])
+                end
+
+                it "Modificar el contenido de la matriz" do
+                        @m1[2] = 1000
+                        @m1[2].should eq(1000)
+                end
+	end
 
 	describe "Comprobacion de las operaciones" do        
 
