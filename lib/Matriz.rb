@@ -65,5 +65,24 @@ class Matriz
 		aux += "]"
 		aux
 	end
+	
+	def +(other)
+		if(@alt==@anc)
+			suma=Matriz.random(@alt+1,@anc+1)
+			for i in (0..@alt)
+				for j in (0..@anc)
+					suma[i][j]=@M[i][j]+other[i][j]
+				end
+			end
+			suma
+		else
+			puts"No se puede sumar, ya que la matriz no es cuadrada"
+		end
+	end
+
 end
 
+
+puts m=Matriz.random(3,3)
+puts n=Matriz.random(3,3)
+puts m.+(n)

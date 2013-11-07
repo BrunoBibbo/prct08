@@ -16,6 +16,18 @@ describe Matriz do
 		end
 	end
 
+
+      describe "Comprobacion de las operaciones" do        
+
+         it "La suma" do
+         for i in 0...2
+         for j in 0...2
+         @m3[i][j].is_a? Integer
+         end
+         end        
+         end
+	end
+
 end
 
 
